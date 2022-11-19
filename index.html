@@ -11,22 +11,24 @@
   <!-- Make buttons in the order: Crowd, Kick, Whistle, Pipes, Try, Clap
   Link buttons to audio files in sounds folder. -->
   <div class="buttonBox">
-    <button value="PLAY" onclick="play()">Murrayfield Crowd</button>
+    <button onclick="play()">Murrayfield Crowd</button>
     <audio id="audio" src="sounds/chant.wav" ></audio>
-    <button value="PLAY"  onclick="play2()">Kick</button>
+    <button onclick="play2()">Kick</button>
     <audio id="audio2" src="sounds/ball.wav" ></audio>
-    <button value="PLAY"  onclick="play3()">Whistle</button>
+    <button onclick="play3()">Whistle</button>
     <audio id="audio3" src="sounds/whistle.mp3" ></audio>
-    <button value="PLAY"  onclick="play4()">Scotland the Brave</button>
+    <button  onclick="play4()">Scotland the Brave</button>
     <audio id="audio4" src="sounds/pipes.mp3" ></audio>
-    <button value="PLAY"  onclick="play5()">Scotland Try!</button>
+    <button onclick="play5()">Scotland Try!</button>
     <audio id="audio5" src="sounds/try.wav" ></audio>
-    <button value="PLAY"  onclick="play6()">Opposition Try</button>
+    <button onclick="play6()">Opposition Try</button>
     <audio id="audio6" src="sounds/small_clap.wav" ></audio>
   </div>
 
 
 <script>
+  let button = document.querySelector('button');
+
   function play(){
     var audio = document.getElementById("audio");
     audio.play();
@@ -53,82 +55,8 @@
     var audio2 = document.getElementById("audio6");
     audio6.play();
   }     
-  // function play() {
-  //   let audio = document.getElementById("audio")
-  //   audio.play();
-  // }
-  // const audio = document.getElementById('#crowd');
-  // const buttons = document.querySelectorAll("button");
-
-  // buttons.forEach(button => {
-  //   button.addEventListener("click", () => {
-  //     audio.play();
-  //   });
-  // });
   
-  // function removeTransition(e) {
-  //   if (e.propertyName !== 'transform') return;
-  //   e.target.classList.remove('playing');
-  // }
-  // function playSound(e) {
-  //   // const audio = document.querySelector(`#${e.id}`);
-  //   const button = document.querySelector(`div['#crowd']`);
-  // //   const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-  // // const audio = document.querySelector(`#${button.id}`);
-  //   const audio = document.querySelector('#crowd');
-  //   audio.play();
-  // });
-  
-  // const buttons = document.querySelectorAll("button");
-  // buttons.forEach(button => button.addEventListener('transitionend', removeTransition));
-  
-  // window.addEventListener('click', playSound)
-  
-  // function playSound(e) {
-  //   // const audio = document.querySelector('#kick');
-  //   // const audio = document.querySelector(`#${e.id}`);
-  //   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-  //   const button = document.querySelector(`div['#crowd']`);
-  //   const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-  //   if (!audio) return;
-
-  //   key.classList.add('playing');
-  //   audio.currentTime = 0;
-  //   audio.play();
-  // }
-
-  // const keys = Array.from(document.querySelectorAll('.key'));
-  // keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  // window.addEventListener('keydown', playSound);
-
-  // const buttons = Array.from(document.querySelectorAll('.button'));
-  // buttons.forEach(button => button.addEventListener('transitionend', removeTransition));
-  // window.addEventListener('click', playSound);
-  // function playSound(e) {
-  //   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-  //   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-  //   if(!audio) return; //stop the fn from running
-  //   audio.currentTime = 0;
-  //   audio.play();
-  //   key.classList.add('playing');
-  
-  // };
-
-  // function removeTransition(e) {
-  //   if(e.propertyName !== 'transform') return; //skip if it's not a transform
-  //   this.classList.remove('playing');
-  // }
-
-  // const keys = document.querySelectorAll('.key');
-  // keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  
-  // window.addEventListener('keydown', playSound)
-
 </script>
 
-<!-- <input type="button" value="PLAY" onclick="play()">
-<audio id="audio" src="sounds/whistle.wav"></audio> -->
-<!-- <button id="Draw/Chat" onclick="audio.play()" type="button" style="font-weight:bold; background: none rgb(0, 255, 0); border: none; color: rgb(255, 255, 255); box-shadow: none; height: 52px; width: 110px; left: 190px; top: 80px; border-radius: 5px; cursor: pointer; position: absolute;">Draw/Chat</button> -->
 </body>
 </html>
-<!--  -->

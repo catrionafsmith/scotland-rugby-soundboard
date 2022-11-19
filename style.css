@@ -26,14 +26,9 @@ div {
   flex: 1; 
   min-height: 100vh;
   gap: 10px;
-  /* align-items: center; */
-  /* justify-content: center;  */
 }
 
 button {
-  /* height: 100px; */
-  /* width: 400px; */
-  /* font-size: x-large; */
   border: .4rem solid white;
   border-radius: 2rem;
   margin: 2rem;
@@ -45,18 +40,11 @@ button {
   text-align: center;
   color: white;
   background: rgba(0, 0, 0,0.4);
-  text-shadow: 0 0 .7rem black;
+  text-shadow: 0 0 .7rem black; 
 }
 
 .playing {
   transform: scale(1.1);
   border-color: #002aff;
   box-shadow: 0 0 1rem #002aff;
-}
-
-.sound {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  color: #ffc600;
 }
