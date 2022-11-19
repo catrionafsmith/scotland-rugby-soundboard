@@ -1,4 +1,4 @@
-# Scotland v Australia Rugby Soundboard
+# Scotland Rugby Soundboard
 <img width="360" alt="Screenshot 2022-11-19 at 12 00 22" src="https://user-images.githubusercontent.com/113362369/202847404-33264688-f0ec-4687-8dcc-28dcfd7fa994.png">
 
 
