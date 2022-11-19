@@ -1,0 +1,62 @@
+html {
+  font-size: 10px;
+  background: url('./rugby.png') bottom center;
+  background-size: cover;
+}
+
+h2 {
+  color: white;
+  font-family: sans-serif;
+  margin: 20px;
+  font-size: 3.5rem;
+  text-shadow: 0 0 .7rem black;
+  text-align: right;
+ 
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+div {
+  display: flex;
+  flex-direction: column; 
+  flex: 1; 
+  min-height: 100vh;
+  gap: 10px;
+  /* align-items: center; */
+  /* justify-content: center;  */
+}
+
+button {
+  /* height: 100px; */
+  /* width: 400px; */
+  /* font-size: x-large; */
+  border: .4rem solid white;
+  border-radius: 2rem;
+  margin: 2rem;
+  font-size: 3.5rem;
+  padding: .5rem .5rem;
+  transition: all .07s ease;
+  height: 12rem;
+  width: 25rem; 
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0,0.4);
+  text-shadow: 0 0 .7rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #002aff;
+  box-shadow: 0 0 1rem #002aff;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
